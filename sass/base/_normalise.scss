@@ -1,0 +1,38 @@
+@import "../utils/variables";
+
+*
+{
+    box-sizing: border-box;
+}
+
+a
+{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+a:link
+{
+    color: $Primary-gray;
+}
+
+a:visited
+{
+    color: $Primary-gray;
+}
+
+a:focus
+{
+    color: $Primary-gray;
+}
+
+a:hover
+{
+    color: $Primary-blue;
+}
+
+a:active
+{
+    color: $Primary-gray;
+}

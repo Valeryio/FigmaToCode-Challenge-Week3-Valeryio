@@ -1,0 +1,40 @@
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+img {
+  max-width: 100%;
+}
+
+.primaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+  background-color: #23A6F0;
+  width: 214px;
+  height: 52px;
+  border-radius: 4px;
+}
+
+.secondaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: #252B42;
+  background-color: transparent;
+  color: #23A6F0;
+}
+
+.basicParagraph-style-1 {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+/*# sourceMappingURL=components.css.map */

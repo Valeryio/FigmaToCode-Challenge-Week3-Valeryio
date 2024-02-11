@@ -1,0 +1,34 @@
+@import "../base/normalise";
+@import "../base/typography";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+header
+{
+    margin: 12px auto;
+    max-width: 1050px;
+    @include flex-positionning(space-between);
+    @include border;
+
+    .signUpButtons
+    {
+        gap: 24px;
+        @include flex-positionning(space-between);
+        // @include border(red);
+    }
+}
+
+.headerUtils
+{
+    gap: 40px;
+    // @include border;
+    @include flex-positionning(space-between);
+
+    .headerNavbar
+    {
+        gap: 24px;
+        @include flex-positionning(space-between);
+        // @include border;
+    }
+}

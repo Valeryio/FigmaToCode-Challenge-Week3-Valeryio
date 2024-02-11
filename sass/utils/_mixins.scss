@@ -1,0 +1,37 @@
+@import "../utils/variables";
+
+
+@mixin border($color: black)
+{
+    border: 1px solid $color;
+}
+
+@mixin flex-positionning($mainAxis: center, $secondaryAxis: center, $wrapState: wrap, $direction: row)
+{
+    display: flex;
+    justify-content: $mainAxis;
+    align-items: $secondaryAxis;
+    flex-direction: $direction;
+    flex-wrap: $wrapState;
+}
+
+@mixin mainButton($bgColor: transparent, $contentColor: $text-color)
+{
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 22px;
+    color: $contentColor;
+    background-color: $bgColor;
+}
+
+@mixin paragraphBaseProperties($pColor: $Primary-gray, $size: 14px, $weigth: 600, $Lheight: 24px, $Lspacing: 0.20)
+{
+    color: $pColor;
+    font-size: $size;
+    font-weight: $weigth;
+    line-height: $Lheight;
+    letter-spacing: $Lspacing;
+    word-wrap: break-word;
+}

@@ -1,0 +1,27 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+img
+{
+    max-width: 100%;
+}
+
+.primaryButton
+{
+    @include mainButton($Primary-blue, white);
+    width: 214px;
+    height: 52px;
+    border-radius: 4px;
+}
+
+.secondaryButton
+{
+    @include mainButton;
+    color: $Primary-blue;
+}
+
+.basicParagraph-style-1
+{
+    @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
+}
