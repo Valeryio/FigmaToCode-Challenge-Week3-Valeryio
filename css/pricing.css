@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+.partners {
+  gap: 24px;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.partnerSectionHeader * {
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+.partnerSectionHeader .partnersSectionTitle {
+  text-align: center;
+  color: #252B42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+.companiesLogos {
+  gap: 64px;
+  margin: 12px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pricingPresentation {
+  border: 1px solid black;
+  gap: 8px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pricingPresentation .pricingOutline {
+  font-weight: 700;
+  color: #737373;
+}
+.pricingPresentation nav {
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pricingOffer {
+  margin: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=pricing.css.map */

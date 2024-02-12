@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0 0;
+  color: #252B42;
+  font-family: "Montserrat", "sans-serif";
+}
+
 a {
   font-weight: 600;
   color: black;

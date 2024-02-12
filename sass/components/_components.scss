@@ -25,3 +25,8 @@ img
 {
     @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
 }
+
+.breadcrumActiveLink
+{
+    color: $text-color;
+}

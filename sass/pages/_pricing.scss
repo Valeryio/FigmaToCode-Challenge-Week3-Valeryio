@@ -1,0 +1,34 @@
+@import "../base/typography";
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../layout/pricingCard";
+
+
+
+
+.pricingPresentation
+{
+    @include border;
+    gap: 8px;
+    margin: 12px;
+    @include flex-positionning(center, center, wrap, column);
+
+    .pricingOutline
+    {
+        font-weight: 700;
+        color: $Primary-gray;
+    }
+
+    nav
+    {
+        gap: 12px;
+        @include flex-positionning();
+    }
+}
+
+.pricingOffer
+{
+    margin: 12px;
+    @include border;
+    @include flex-positionning()
+}

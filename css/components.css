@@ -37,4 +37,8 @@ img {
   word-wrap: break-word;
 }
 
+.breadcrumActiveLink {
+  color: #252B42;
+}
+
 /*# sourceMappingURL=components.css.map */
