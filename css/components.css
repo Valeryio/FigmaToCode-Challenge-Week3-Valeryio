@@ -4,6 +4,7 @@ img {
   max-width: 100%;
 }
 
+/*----------------------------------Button Styles------------------------------*/
 .primaryButton {
   border: none;
   font-size: 14px;
@@ -28,7 +29,43 @@ img {
   color: #23A6F0;
 }
 
-.basicParagraph-style-1 {
+/*-------------------------------Header Styles-----------------------------*/
+.outline-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #737373;
+  letter-spacing: 0.1px;
+}
+
+.outline-title-text-color {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #252B42;
+  letter-spacing: 0.1px;
+}
+
+.standard-h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.standard-h2 {
+  margin: 0;
+  border: 1px solid black;
+  color: #252B42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+/*-------------------------------Paragraph Styles-----------------------------*/
+.standard-paragraph {
   color: #737373;
   font-size: 16px;
   font-weight: 600;
@@ -37,7 +74,26 @@ img {
   word-wrap: break-word;
 }
 
-.breadcrumActiveLink {
+.paragraph-text-color {
+  color: #252B42;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.style-01-paragraph {
+  color: #737373;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+/*---------------------------------Links Styles-------------------------------*/
+.breadcrum-non-active-link {
   color: #252B42;
 }
 

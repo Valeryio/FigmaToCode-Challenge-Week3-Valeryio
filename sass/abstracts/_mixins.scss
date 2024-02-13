@@ -1,9 +1,9 @@
-@import "../utils/variables";
+@import "variables";
 
 
-@mixin border($color: black)
+@mixin border($color: black, $width: 1px)
 {
-    border: 1px solid $color;
+    border: $width solid $color;
 }
 
 @mixin flex-positionning($mainAxis: center, $secondaryAxis: center, $wrapState: wrap, $direction: row)

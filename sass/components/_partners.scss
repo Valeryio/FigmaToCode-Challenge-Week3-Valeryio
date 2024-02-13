@@ -1,6 +1,9 @@
 @import "../base/typography";
-@import "../utils/mixins";
-@import "../utils/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../components/pricingCard";
+
+
 
 
 .partners
@@ -24,8 +27,8 @@
 
     .partnersSectionTitle
     {
-        text-align: center;
-        @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);
+       /* text-align: center;
+        @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
     }
 
 }
@@ -37,4 +40,3 @@
     @include border;
     @include flex-positionning();
 }
-

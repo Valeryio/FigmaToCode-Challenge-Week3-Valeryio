@@ -1,7 +1,7 @@
-@import "../base/typography";
-@import "../utils/mixins";
-@import "../utils/variables";
-@import "../layout/pricingCard";
+
+
+@import '../main.scss';
+
 
 .heroHeader
 {
@@ -26,27 +26,28 @@
 
     .outlineContent
     {
+        /*
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
-        letter-spacing: 0.10px;
+        letter-spacing: 0.10px;*/
     }
 
     h1
     {
-        font-size: 58px;
+    /* font-size: 58px;
         font-weight: 700;
         line-height: 80px;
-        letter-spacing: 0.20px;
+        letter-spacing: 0.20px;*/
     }
 
     .heroHeaderDescription
     {
-        font-size: 20px;
+       /* font-size: 20px;
         color: $Primary-gray;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 30px;
-        letter-spacing: 0.20px;
+        letter-spacing: 0.20px;*/
     }
 }
 
@@ -58,14 +59,14 @@
     max-width: max-content;
     @include flex-positionning(space-between);
 
-    .leftSectionInformations
+    .rightSectionInformations
     { 
-        color: #737373;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0.20px;
-        word-wrap: break-word;
+        // color: #737373;
+        // font-size: 14px;
+        // font-weight: 600;
+        // line-height: 20px;
+        // letter-spacing: 0.20px;
+        // word-wrap: break-word;
     }
 
 }
@@ -91,7 +92,7 @@
     {
         color: $text-color;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 32px;
         letter-spacing: 0.10px;
     }
@@ -172,7 +173,7 @@
 
     .companyTeamTitle
     {
-        @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);
+        // @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);
     }
 }
 

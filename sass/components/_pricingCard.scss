@@ -1,0 +1,12 @@
+@import "../base/typography";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+
+.pricingOfferContainer
+{
+    margin: 12px;
+    @include border;
+    @include flex-positionning();
+}

@@ -1,8 +1,4 @@
-@import "../base/typography";
-@import "../utils/mixins";
-@import "../utils/variables";
-@import "../layout/pricingCard";
-
+@import '../main.scss';
 
 
 
@@ -11,12 +7,23 @@
     @include border;
     gap: 8px;
     margin: 12px;
+    padding: 0;
     @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        @include border;
+        text-align: center;
+    }
 
     .pricingOutline
     {
+        /*
+        font-size: 16px;
         font-weight: 700;
+        line-height: 24px;
         color: $Primary-gray;
+        letter-spacing: 0.10px;*/
     }
 
     nav
@@ -26,9 +33,53 @@
     }
 }
 
+
 .pricingOffer
 {
     margin: 12px;
-    @include border;
-    @include flex-positionning()
+    padding: 112px 195px;
+    @include border(red);
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        text-align: center;
+    }
+
+    .pricingOfferTopOptions
+    {
+        gap: 20px;
+         @include flex-positionning(space-between)
+    }
+}
+
+.pricingCard
+{
+    min-width: 324px;
+    @include border($Primary-blue, 2px);
+}
+
+.sideContainer
+{
+    padding: 12px;
+    border-radius: 12px;
+
+    .siteContainerTitle
+    {
+        @include paragraphBaseProperties($text-color, 24px, 700, 80px, 0.10);
+    }
+}
+
+.centerContainer
+{
+    min-height: 704px;
+    border-radius: 12px;
+    color: white;
+    background-color: $text-color;
+    @include border(red);
+
+    .siteContainerTitle
+    {
+        @include paragraphBaseProperties(white, 24px, 700, 80px, 0.10);
+    }
 }

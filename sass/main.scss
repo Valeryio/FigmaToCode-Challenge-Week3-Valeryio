@@ -1,0 +1,27 @@
+/// Importing all the styles in other .scss files into this one
+
+/// Abstracts elements
+@import 
+    'abstracts/variables',
+    'abstracts/mixins';
+
+
+/// Bases elements
+@import 
+    'base/normalise',
+    'base/typography';
+
+
+/// Components elements
+@import 
+    'components/components',
+    'components/partners',
+    'components/pricingCard',
+    'components/buttons';
+
+
+/// Layout elements
+@import 
+    'layout/header',
+    'layout/footer';
+

@@ -1,11 +1,14 @@
-@import "../utils/mixins";
-@import "../utils/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
 
 
 img
 {
     max-width: 100%;
 }
+
+
+/*----------------------------------Button Styles------------------------------*/
 
 .primaryButton
 {
@@ -21,12 +24,65 @@ img
     color: $Primary-blue;
 }
 
-.basicParagraph-style-1
+
+/*-------------------------------Header Styles-----------------------------*/
+
+.outline-title
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $Primary-gray;
+    letter-spacing: 0.10px;
+}
+
+.outline-title-text-color
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $text-color;
+    letter-spacing: 0.10px;
+}
+
+.standard-h1
+{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.20px;
+}
+
+.standard-h2
+{
+    margin: 0;
+    @include border;
+    @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);
+}
+
+
+
+/*-------------------------------Paragraph Styles-----------------------------*/
+
+.standard-paragraph
 {
     @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
 }
 
-.breadcrumActiveLink
+.paragraph-text-color
+{
+    @include paragraphBaseProperties($text-color, 16px, 600, 24px, 0.10); 
+}
+
+.style-01-paragraph
+{
+    @include paragraphBaseProperties($Primary-gray, 20px, 600, 30px, 0.20);    
+}
+
+
+/*---------------------------------Links Styles-------------------------------*/
+
+.breadcrum-non-active-link
 {
     color: $text-color;
 }
