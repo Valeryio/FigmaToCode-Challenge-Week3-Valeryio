@@ -8,5 +8,119 @@
 {
     margin: 12px;
     @include border;
-    @include flex-positionning();
+    @include flex-positionning(center, end);
 }
+
+
+.pricingCard
+{
+    gap: 24px;
+    min-width: 324px;
+    border-radius: 12px;
+    @include border($Primary-blue, 2px);
+    @include flex-positionning(center, center, wrap, column);
+
+    .price
+    {
+        gap: 12px;
+        @include border;
+        @include flex-positionning();
+    }
+
+    .pricingOfferOptions
+    {
+        gap: 8px;
+        @include border;
+        @include flex-positionning(start, center, no-wrap);
+        min-width: 100%;
+    }
+}
+
+
+.price
+{
+    
+    margin: 0;
+    @include border;
+    @include paragraphBaseProperties($Primary-blue, 40px, 700, 80px, 0.20);
+
+    .priceOptions
+    {
+        height: max-content;
+        @include border;
+        @include flex-positionning(center, start, wrap, column);
+        
+        
+    }
+}
+
+
+
+.price .priceOptions
+{
+    > *
+    {
+        margin: 0;
+        @include border;
+    }
+    
+    p
+    {
+        @include paragraphBaseProperties($Primary-blue, 14px, 700, 20px, 0.10);
+    }
+
+}
+
+.pricingOfferOptions p
+{
+    font-weight: 700;
+    text-align: left;
+}
+
+
+.sideContainer
+{
+    padding: 20px 24px;
+
+    .siteContainerTitle
+    {
+        margin: 0;
+        @include paragraphBaseProperties($text-color, 24px, 700, 20px, 0.10);
+    }
+
+}
+
+.sideContainer:first-child
+{
+    button
+    {
+        background-color: $text-color;
+    }
+}
+
+.centerContainer
+{
+    min-height: 800px;
+    color: white;
+    // padding: 70px 40px;
+    padding: 20px 24px;
+    background-color: $text-color;
+
+    .siteContainerTitle
+    {
+        margin: 0;
+        @include paragraphBaseProperties(white, 24px, 700, 0px, 0.10);
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .pricingOfferContainer
+    {
+        gap: 24px;
+    }
+
+}
+

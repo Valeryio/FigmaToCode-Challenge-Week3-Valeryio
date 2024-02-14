@@ -55,7 +55,6 @@ img {
 
 .standard-h2 {
   margin: 0;
-  border: 1px solid black;
   color: #252B42;
   font-size: 40px;
   font-weight: 700;
@@ -66,6 +65,7 @@ img {
 
 /*-------------------------------Paragraph Styles-----------------------------*/
 .standard-paragraph {
+  margin: 0;
   color: #737373;
   font-size: 16px;
   font-weight: 600;
@@ -75,6 +75,7 @@ img {
 }
 
 .paragraph-text-color {
+  margin: 0;
   color: #252B42;
   font-size: 16px;
   font-weight: 600;
@@ -84,6 +85,7 @@ img {
 }
 
 .style-01-paragraph {
+  margin: 0;
   color: #737373;
   font-size: 20px;
   font-weight: 600;

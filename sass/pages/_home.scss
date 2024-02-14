@@ -261,3 +261,12 @@
     }
     
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .headerNavbar, .signUpButtons
+    {
+        display: none;
+    }
+}

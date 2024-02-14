@@ -4,10 +4,10 @@
 
 .pricingPresentation
 {
-    @include border;
     gap: 8px;
-    margin: 12px;
     padding: 0;
+    margin: 12px;
+    @include border;
     @include flex-positionning(center, center, wrap, column);
 
     > *
@@ -51,35 +51,91 @@
         gap: 20px;
          @include flex-positionning(space-between)
     }
+
 }
 
-.pricingCard
-{
-    min-width: 324px;
-    @include border($Primary-blue, 2px);
-}
 
-.sideContainer
+.FAQ
 {
-    padding: 12px;
-    border-radius: 12px;
+    gap: 32px;
+    margin: 80px auto;
+    max-width: max-content;
+    @include border(green, 2px);
+    @include flex-positionning(center, center, wrap, column);
 
-    .siteContainerTitle
+    a
     {
-        @include paragraphBaseProperties($text-color, 24px, 700, 80px, 0.10);
+        // text-align: center;
+        @include border(red, 2px);
+        // display: block;
     }
 }
 
-.centerContainer
+.faq-header
 {
-    min-height: 704px;
-    border-radius: 12px;
-    color: white;
-    background-color: $text-color;
-    @include border(red);
+    @include border(red, 2px);
 
-    .siteContainerTitle
+    > *
     {
-        @include paragraphBaseProperties(white, 24px, 700, 80px, 0.10);
+        text-align: center;
+    }
+}
+
+.questions-container
+{
+    gap: 30px;
+    margin: auto;
+    @include border(red, 2px);
+    max-width: max-content;
+    @include flex-positionning();
+}
+
+
+.q-and-answer-container
+{
+    gap: 16px;
+    padding: 25px;
+    @include border;
+    @include flex-positionning(top, top);
+
+    > *
+    {
+        @include border;
+    }
+
+    picture
+    {
+        padding-top: 24px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    
+    .pricingOffer
+    {
+        padding: 12px;
+    }
+
+}
+
+.pricing-call-to-action
+{
+    gap: 32px;
+    margin: 160px auto;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        text-align: center;
+    }
+
+    .social-real-icons
+    {
+        gap: 32px;
+        @include border;
+        @include flex-positionning();
     }
 }
