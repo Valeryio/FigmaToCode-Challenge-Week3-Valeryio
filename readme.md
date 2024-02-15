@@ -3,25 +3,6 @@
 This is a frontend web project based on the 7-1 SASS architecture. This is an adaptation to the size of the project to use only the necessary part of the architecture.
 
 ```
-ressources/
-|
-|- icons
-|- images
-|- logos
-|- video
-|
-css/
-|
-|- components.css
-|- home.css
-|- team.css
-|- contact.css
-|- normalise.css
-|...
-|
-js/
-|
-|
 sass/
 |
 |– utils/
@@ -58,4 +39,24 @@ sass/
 |
 |
 `– main.scss             # Main Sass file
+|
+|
+ressources/
+|
+|- icons
+|- images
+|- logos
+|- video
+|
+css/
+|
+|- components.css
+|- home.css
+|- team.css
+|- contact.css
+|- normalise.css
+|...
+|
+js/
+|
 ```
