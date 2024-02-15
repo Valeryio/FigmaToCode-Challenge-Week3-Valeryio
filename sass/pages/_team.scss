@@ -1,0 +1,22 @@
+/// This is the main page of the HTML page team
+
+@import '../main.scss';
+
+.products-gallery
+{
+    padding: 12px;
+    @include border(red);
+    @include flex-positionning();
+
+    > *
+    {
+        @include border;
+    }
+
+    .small-img
+    {
+        gap: 8px;
+        max-width: 49%;
+        @include flex-positionning(center, center, wrap);
+    }
+}

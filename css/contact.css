@@ -1,0 +1,816 @@
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0;
+  color: #252B42;
+  font-family: "Montserrat", "sans-serif";
+}
+
+a {
+  font-weight: 600;
+  color: #252B42;
+  text-decoration: none;
+}
+
+a:link {
+  color: #737373;
+}
+
+a:visited {
+  color: #737373;
+}
+
+a:focus {
+  color: #737373;
+}
+
+a:hover {
+  color: #23A6F0;
+}
+
+a:active {
+  color: #737373;
+}
+
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+img {
+  max-width: 100%;
+}
+
+/*----------------------------------Button Styles------------------------------*/
+.primaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+  background-color: #23A6F0;
+  width: 214px;
+  height: 52px;
+  border-radius: 4px;
+}
+
+.secondaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: #252B42;
+  background-color: transparent;
+  color: #23A6F0;
+}
+
+/*-------------------------------Header Styles-----------------------------*/
+.outline-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #737373;
+  letter-spacing: 0.1px;
+}
+
+.outline-title-text-color {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #252B42;
+  letter-spacing: 0.1px;
+}
+
+.standard-h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.standard-h2 {
+  margin: 0;
+  color: #252B42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+/*-------------------------------Paragraph Styles-----------------------------*/
+.standard-paragraph {
+  margin: 0;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.paragraph-text-color {
+  margin: 0;
+  color: #252B42;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.style-01-paragraph {
+  margin: 0;
+  color: #737373;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+/*---------------------------------Links Styles-------------------------------*/
+.breadcrum-non-active-link {
+  color: #252B42;
+}
+
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+.pricingOfferContainer {
+  margin: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pricingCard {
+  gap: 24px;
+  min-width: 324px;
+  border-radius: 12px;
+  border: 2px solid #23A6F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pricingCard .price {
+  gap: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pricingCard .pricingOfferOptions {
+  gap: 8px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  min-width: 100%;
+}
+
+.price {
+  margin: 0;
+  border: 1px solid black;
+  color: #23A6F0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+.price .priceOptions {
+  height: max-content;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.price .priceOptions > * {
+  margin: 0;
+  border: 1px solid black;
+}
+.price .priceOptions p {
+  color: #23A6F0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.pricingOfferOptions p {
+  font-weight: 700;
+  text-align: left;
+}
+
+.sideContainer {
+  padding: 20px 24px;
+}
+.sideContainer .siteContainerTitle {
+  margin: 0;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.sideContainer:first-child button {
+  background-color: #252B42;
+}
+
+.centerContainer {
+  min-height: 800px;
+  color: white;
+  padding: 20px 24px;
+  background-color: #252B42;
+}
+.centerContainer .siteContainerTitle {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .pricingOfferContainer {
+    gap: 24px;
+  }
+}
+/*################### -------------------COLORS--------------------####################*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0;
+  color: #252B42;
+  font-family: "Montserrat", "sans-serif";
+}
+
+a {
+  font-weight: 600;
+  color: #252B42;
+  text-decoration: none;
+}
+
+a:link {
+  color: #737373;
+}
+
+a:visited {
+  color: #737373;
+}
+
+a:focus {
+  color: #737373;
+}
+
+a:hover {
+  color: #23A6F0;
+}
+
+a:active {
+  color: #737373;
+}
+
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+header {
+  margin: 12px auto;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+header .signUpButtons {
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.headerUtils {
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.headerUtils .headerNavbar {
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+footer {
+  border: 1px solid black;
+}
+footer .socialMediaBrand {
+  max-width: 1120px;
+  padding: 0 0 12px 0;
+  margin: 24px auto;
+  border-bottom: 1px solid #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footerInformations {
+  gap: 64px;
+  margin: 12px auto;
+  max-width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footerRights {
+  width: 100%;
+  height: 56px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footerInformations {
+  border: 1px solid black;
+}
+.footerInformations nav {
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.formContent {
+  width: max-content;
+  height: 56px;
+  border: 1px solid black;
+}
+.formContent * {
+  margin: 0;
+}
+.formContent input, .formContent button {
+  height: 100%;
+}
+.formContent input {
+  width: 204px;
+  outline: none;
+  padding: 4px;
+  border: 2px solid #737373;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+}
+.formContent button {
+  width: 112px;
+}
+
+.footerRights p {
+  margin: auto;
+  min-width: 76%;
+  font-weight: 600;
+  border: 1px solid black;
+}
+
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+.pricingOfferContainer {
+  margin: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pricingCard {
+  gap: 24px;
+  min-width: 324px;
+  border-radius: 12px;
+  border: 2px solid #23A6F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pricingCard .price {
+  gap: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pricingCard .pricingOfferOptions {
+  gap: 8px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  min-width: 100%;
+}
+
+.price {
+  margin: 0;
+  border: 1px solid black;
+  color: #23A6F0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+.price .priceOptions {
+  height: max-content;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.price .priceOptions > * {
+  margin: 0;
+  border: 1px solid black;
+}
+.price .priceOptions p {
+  color: #23A6F0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.pricingOfferOptions p {
+  font-weight: 700;
+  text-align: left;
+}
+
+.sideContainer {
+  padding: 20px 24px;
+}
+.sideContainer .siteContainerTitle {
+  margin: 0;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.sideContainer:first-child button {
+  background-color: #252B42;
+}
+
+.centerContainer {
+  min-height: 800px;
+  color: white;
+  padding: 20px 24px;
+  background-color: #252B42;
+}
+.centerContainer .siteContainerTitle {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .pricingOfferContainer {
+    gap: 24px;
+  }
+}
+.partners {
+  gap: 24px;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.partnerSectionHeader * {
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+.partnerSectionHeader .partnersSectionTitle {
+  /* text-align: center;
+   @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
+}
+
+.companiesLogos {
+  gap: 64px;
+  margin: 12px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.heroHeader {
+  margin: 12px auto;
+  max-width: 1050px;
+  border: 2px solid violet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heroHeader .heroHeaderContent {
+  gap: 32px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.heroHeader picture {
+  max-width: 616px;
+  max-height: 646px;
+  border: 1px solid red;
+}
+.heroHeader .social-real-icons {
+  gap: 24px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.heroHeaderContent > * {
+  margin: 0;
+  word-wrap: break-word;
+}
+.heroHeaderContent .outlineContent {
+  border: 1px solid black;
+}
+.heroHeaderContent h1 {
+  border: 1px solid black;
+}
+.heroHeaderContent .heroHeaderDescription {
+  border: 1px solid black;
+}
+
+.heroHeaderContacts > * {
+  margin: 0;
+  border: 1px solid black;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+.heroHeader picture img {
+  max-width: 100%;
+}
+
+.first-section {
+  gap: 8px;
+  padding: 0;
+  margin: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.first-section > * {
+  border: 1px solid black;
+  text-align: center;
+}
+.first-section nav {
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.companyTeamMembers {
+  gap: 112px;
+  padding: 112px 0;
+  margin: 12px auto;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.companyTeamMembers .companyMembers {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.companyTeamHeader {
+  border: 1px solid black;
+}
+.companyTeamHeader * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.companyMembers {
+  width: 100%;
+  border: 1px solid black;
+}
+.companyMembers .member {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.companyMembers .socialIcons {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.memberInformations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.memberInformations .memberUsername {
+  font-weight: 700;
+}
+
+.trial-call-to-action {
+  gap: 32px;
+  margin: 160px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.trial-call-to-action > * {
+  text-align: center;
+}
+.trial-call-to-action .social-real-icons {
+  gap: 32px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.supportOptionSection {
+  margin: 164px auto 64px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.supportOptionSection .supportOptionSectionHeader {
+  margin: 32px auto;
+  border: 1px solid black;
+}
+.supportOptionSection .supportOptionsCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.supportOptionSectionHeader > * {
+  text-align: center;
+}
+
+.supportCardOption {
+  gap: 16px;
+  width: 328px;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.supportCardOption > * {
+  margin: 0;
+  font-weight: 700;
+  border: 1px solid black;
+}
+.supportCardOption button {
+  width: 192px;
+  height: 56px;
+  border-radius: 32px;
+  border: 2px solid;
+}
+
+.supportSideCard {
+  height: 342px;
+}
+
+.supportCenterCard {
+  color: white;
+  height: 404px;
+  background-color: #252B42;
+}
+
+.contactCallToAction {
+  gap: 24px;
+  margin: 24px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=contact.css.map */

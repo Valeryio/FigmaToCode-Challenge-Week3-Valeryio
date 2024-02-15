@@ -1,0 +1,31 @@
+/// This layout file contain a common page structure for 
+/// - pricing
+/// - team
+/// - contact
+/// pages that all have the same type of heading section
+/// with a breadcrumbs.
+/// The layout file is imported in the main.scss file, so
+/// you just have to write the good html structure for your
+/// section and add to it the class first section.
+
+
+.first-section
+{
+    gap: 8px;
+    padding: 0;
+    margin: 12px;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        @include border;
+        text-align: center;
+    }
+
+    nav
+    {
+        gap: 12px;
+        @include flex-positionning();
+    }
+}

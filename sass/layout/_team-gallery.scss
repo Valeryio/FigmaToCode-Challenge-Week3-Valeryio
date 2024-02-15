@@ -1,0 +1,65 @@
+
+
+.companyTeamMembers
+{
+    gap: 112px;
+    padding: 112px 0;
+    margin: 12px auto;
+    max-width: 1050px;
+    @include flex-positionning(space-between, center, wrap, column);
+    @include border;
+
+    .companyMembers
+    {
+        gap: 30px;
+        @include flex-positionning(center, center);
+    }
+
+}
+
+.companyTeamHeader
+{
+    @include border;
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .companyTeamTitle
+    {
+        // @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);
+    }
+}
+
+.companyMembers
+{
+    width: 100%;
+    @include border;
+
+    .member
+    {
+         @include border;
+        @include flex-positionning(space-between, center, wrap, column);
+    }
+
+    .socialIcons
+    {
+        gap: 20px;
+        // @include border;
+        @include flex-positionning(space-between);
+    }
+}
+
+.memberInformations
+{
+    
+    @include flex-positionning(space-between, center, wrap, column);
+    .memberUsername
+    {
+        font-weight: 700;
+    }
+}
+

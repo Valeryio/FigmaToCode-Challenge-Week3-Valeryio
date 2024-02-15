@@ -1,0 +1,79 @@
+/// This is the main page of the HTML page contact
+
+@import '../main.scss';
+
+
+.supportOptionSection
+{
+    margin: 164px auto 64px auto;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    .supportOptionSectionHeader
+    {
+        margin: 32px auto;
+        @include border;
+    }
+
+    .supportOptionsCardContainer
+    {
+
+        @include flex-positionning(center)
+    }
+
+}
+
+.supportOptionSectionHeader
+{
+    > *
+    {
+        text-align: center;
+    }
+}
+
+
+.supportCardOption
+{
+    gap: 16px;
+    width: 328px;
+    padding: 24px 40px;
+    box-sizing: border-box;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        margin: 0;
+        font-weight: 700;
+        @include border;
+    }
+
+    button
+    {
+        width: 192px;
+        height: 56px;
+        border-radius: 32px;
+        border: 2px solid;
+    }
+}
+
+.supportSideCard
+{
+    height: 342px;
+}
+
+.supportCenterCard
+{
+    color: white;
+    height: 404px;
+    background-color: $text-color;
+}
+
+
+.contactCallToAction
+{
+    gap: 24px;
+    margin: 24px auto;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+}

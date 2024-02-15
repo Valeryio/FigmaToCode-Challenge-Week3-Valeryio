@@ -1,0 +1,76 @@
+
+
+.heroHeader
+{
+    margin: 12px auto;
+    max-width: 1050px;
+    @include border(violet, 2px);
+    @include flex-positionning(space-between, center);
+
+
+    .heroHeaderContent
+    {
+        gap: 32px;
+        @include border;
+        @include flex-positionning(center, left, wrap, column);
+    }
+
+    picture
+    {
+        max-width: 616px;
+        max-height: 646px;
+        @include border(red);
+    }
+
+    .social-real-icons
+    {
+        gap: 24px;
+        @include border;
+        @include flex-positionning(left);
+    }
+}
+
+.heroHeaderContent
+{
+    > *
+    {  
+        margin: 0;
+        word-wrap: break-word;
+    }
+
+    .outlineContent
+    {
+        @include border;
+    }
+
+    h1
+    {
+        @include border;
+    }
+
+    .heroHeaderDescription
+    {
+        @include border;
+    }
+}
+
+.heroHeaderContacts
+{
+    > *
+    {
+        margin: 0;
+        @include border;
+        @include paragraphBaseProperties($text-color, 24px, 700, 40px, 0.20);
+    }
+}
+
+
+.heroHeader picture
+{
+
+    img
+    {
+        max-width: 100%;
+        // max-height: 10px;
+    }
+}

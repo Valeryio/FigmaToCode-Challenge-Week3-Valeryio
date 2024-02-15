@@ -1,0 +1,20 @@
+
+.trial-call-to-action
+{
+    gap: 32px;
+    margin: 160px auto;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        text-align: center;
+    }
+
+    .social-real-icons
+    {
+        gap: 32px;
+        @include border;
+        @include flex-positionning();
+    }
+}
