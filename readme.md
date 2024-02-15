@@ -2,6 +2,7 @@
 
 This is a frontend web project based on the 7-1 SASS architecture. This is an adaptation to the size of the project to use only the necessary part of the architecture.
 
+```
 ressources/
 |
 |- icons
@@ -57,3 +58,4 @@ sass/
 |
 |
 `– main.scss             # Main Sass file
+```
