@@ -1,7 +1,9 @@
+/// This is the main page of the HTML page pricing
+
 @import '../main.scss';
 
 
-
+/*
 .pricingPresentation
 {
     gap: 8px;
@@ -17,14 +19,14 @@
     }
 
     .pricingOutline
-    {
+    {*/
         /*
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
         color: $Primary-gray;
         letter-spacing: 0.10px;*/
-    }
+ /*   }
 
     nav
     {
@@ -32,7 +34,7 @@
         @include flex-positionning();
     }
 }
-
+*/
 
 .pricingOffer
 {
@@ -118,24 +120,4 @@
         padding: 12px;
     }
 
-}
-
-.pricing-call-to-action
-{
-    gap: 32px;
-    margin: 160px auto;
-    @include border;
-    @include flex-positionning(center, center, wrap, column);
-
-    > *
-    {
-        text-align: center;
-    }
-
-    .social-real-icons
-    {
-        gap: 32px;
-        @include border;
-        @include flex-positionning();
-    }
 }

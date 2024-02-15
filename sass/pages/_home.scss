@@ -1,8 +1,9 @@
 
+/// This is the main page of the HTML page index
 
 @import '../main.scss';
 
-
+/*
 .heroHeader
 {
     margin: 12px auto;
@@ -31,7 +32,7 @@
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 0.10px;*/
-    }
+ /*   }
 
     h1
     {
@@ -39,7 +40,7 @@
         font-weight: 700;
         line-height: 80px;
         letter-spacing: 0.20px;*/
-    }
+ /*   }
 
     .heroHeaderDescription
     {
@@ -48,8 +49,8 @@
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0.20px;*/
-    }
-}
+ /*   }
+}*/
 
 .additionnalInfos
 {
@@ -143,6 +144,9 @@
         border-radius: 12px;
     }
 }
+
+/*
+
 .companyTeamMembers
 {
     gap: 112px;
@@ -205,6 +209,10 @@
         font-weight: 700;
     }
 }
+
+*/
+
+
 
 .finalCallToAction
 {

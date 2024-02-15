@@ -146,160 +146,6 @@ img {
 
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
-/*################### -------------------COLORS--------------------####################*/
-/*################### -------------------COLORS--------------------####################*/
-.pricingOfferContainer {
-  margin: 12px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.pricingCard {
-  gap: 24px;
-  min-width: 324px;
-  border-radius: 12px;
-  border: 2px solid #23A6F0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.pricingCard .price {
-  gap: 12px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.pricingCard .pricingOfferOptions {
-  gap: 8px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  min-width: 100%;
-}
-
-.price {
-  margin: 0;
-  border: 1px solid black;
-  color: #23A6F0;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 80px;
-  letter-spacing: 0.2;
-  word-wrap: break-word;
-}
-.price .priceOptions {
-  height: max-content;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.price .priceOptions > * {
-  margin: 0;
-  border: 1px solid black;
-}
-.price .priceOptions p {
-  color: #23A6F0;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.1;
-  word-wrap: break-word;
-}
-
-.pricingOfferOptions p {
-  font-weight: 700;
-  text-align: left;
-}
-
-.sideContainer {
-  padding: 20px 24px;
-}
-.sideContainer .siteContainerTitle {
-  margin: 0;
-  color: #252B42;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.1;
-  word-wrap: break-word;
-}
-
-.sideContainer:first-child button {
-  background-color: #252B42;
-}
-
-.centerContainer {
-  min-height: 800px;
-  color: white;
-  padding: 20px 24px;
-  background-color: #252B42;
-}
-.centerContainer .siteContainerTitle {
-  margin: 0;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 0px;
-  letter-spacing: 0.1;
-  word-wrap: break-word;
-}
-
-@media screen and (max-width: 600px) {
-  .pricingOfferContainer {
-    gap: 24px;
-  }
-}
-.partners {
-  gap: 24px;
-  margin: 0 auto;
-  padding: 80px 0;
-  background-color: #FAFAFA;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.partnerSectionHeader * {
-  margin: 0;
-  padding: 16px;
-  text-align: center;
-}
-.partnerSectionHeader .partnersSectionTitle {
-  /* text-align: center;
-   @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
-}
-
-.companiesLogos {
-  gap: 64px;
-  margin: 12px auto;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-/*################### -------------------COLORS--------------------####################*/
-/*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
   border: 1px solid black;
@@ -572,7 +418,161 @@ footer .footerRights {
   border: 1px solid black;
 }
 
-.pricingPresentation {
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+.pricingOfferContainer {
+  margin: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pricingCard {
+  gap: 24px;
+  min-width: 324px;
+  border-radius: 12px;
+  border: 2px solid #23A6F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pricingCard .price {
+  gap: 12px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pricingCard .pricingOfferOptions {
+  gap: 8px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  min-width: 100%;
+}
+
+.price {
+  margin: 0;
+  border: 1px solid black;
+  color: #23A6F0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+.price .priceOptions {
+  height: max-content;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.price .priceOptions > * {
+  margin: 0;
+  border: 1px solid black;
+}
+.price .priceOptions p {
+  color: #23A6F0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.pricingOfferOptions p {
+  font-weight: 700;
+  text-align: left;
+}
+
+.sideContainer {
+  padding: 20px 24px;
+}
+.sideContainer .siteContainerTitle {
+  margin: 0;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.sideContainer:first-child button {
+  background-color: #252B42;
+}
+
+.centerContainer {
+  min-height: 800px;
+  color: white;
+  padding: 20px 24px;
+  background-color: #252B42;
+}
+.centerContainer .siteContainerTitle {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .pricingOfferContainer {
+    gap: 24px;
+  }
+}
+.partners {
+  gap: 24px;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.partnerSectionHeader * {
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+.partnerSectionHeader .partnersSectionTitle {
+  /* text-align: center;
+   @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
+}
+
+.companiesLogos {
+  gap: 64px;
+  margin: 12px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.first-section {
   gap: 8px;
   padding: 0;
   margin: 12px;
@@ -583,19 +583,11 @@ footer .footerRights {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.pricingPresentation > * {
+.first-section > * {
   border: 1px solid black;
   text-align: center;
 }
-.pricingPresentation .pricingOutline {
-  /*
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  color: $Primary-gray;
-  letter-spacing: 0.10px;*/
-}
-.pricingPresentation nav {
+.first-section nav {
   gap: 12px;
   display: flex;
   justify-content: center;
@@ -604,6 +596,61 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
+.trial-call-to-action {
+  gap: 32px;
+  margin: 160px auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.trial-call-to-action > * {
+  text-align: center;
+}
+.trial-call-to-action .social-real-icons {
+  gap: 32px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*
+.pricingPresentation
+{
+    gap: 8px;
+    padding: 0;
+    margin: 12px;
+    @include border;
+    @include flex-positionning(center, center, wrap, column);
+
+    > *
+    {
+        @include border;
+        text-align: center;
+    }
+
+    .pricingOutline
+    {*/
+/*
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+color: $Primary-gray;
+letter-spacing: 0.10px;*/
+/*   }
+
+    nav
+    {
+        gap: 12px;
+        @include flex-positionning();
+    }
+}
+*/
 .pricingOffer {
   margin: 12px;
   padding: 112px 195px;
@@ -681,28 +728,6 @@ footer .footerRights {
   .pricingOffer {
     padding: 12px;
   }
-}
-.pricing-call-to-action {
-  gap: 32px;
-  margin: 160px auto;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.pricing-call-to-action > * {
-  text-align: center;
-}
-.pricing-call-to-action .social-real-icons {
-  gap: 32px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=pricing.css.map */

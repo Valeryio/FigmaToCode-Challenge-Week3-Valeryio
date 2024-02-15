@@ -15,7 +15,6 @@
 /// Components elements
 @import 
     'components/components',
-    'components/partners',
     'components/pricingCard',
     'components/buttons';
 
@@ -23,5 +22,10 @@
 /// Layout elements
 @import 
     'layout/header',
-    'layout/footer';
+    'layout/footer',
+    'layout/partners',
+    'layout/main-layout',
+    'layout/secondary-layout',
+    'layout/team-gallery',
+    'layout/free-trial-cta';
 
