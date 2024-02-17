@@ -11,15 +11,11 @@
 header
 {
     max-width: 1050px;
-    // min-width: 332px;
     margin: 12px auto;
-    @include border(red);
     @include flex-positionning(space-between);
 
     .headerUtils
     {
-        // min-width: 328px;
-        @include border(red);
         @include flex-positionning(space-between);
     }
 
@@ -63,13 +59,16 @@ header
     }
 
 
+    /*
+    // General styles for responsive
+    */
     header
     {
-        // padding: 0 8px;
 
         .headerUtils
         {
             width: 100%;
+            padding: 0 24px;
     
             .responsiveIcons
             {
@@ -85,13 +84,6 @@ header
         }
 
     }
-
-    
-    .responsiveIcons .hamburger:active
-    {
-        border: 2px solid violet;
-    }
-
     
     /*
     // Utilities
@@ -116,173 +108,5 @@ header
             @include flex-positionning();
         }
 
-}
-
-/*
-    header
-    {
-        margin: 12px auto;
-        max-width: 1050px;
-        @include flex-positionning(space-between);
-        @include border(red, 2px);
-
-        .headerUtils
-        {
-            gap: 8px;
-        }
-    
-
-        .signUpButtons
-        {
-            gap: 24px;
-            @include flex-positionning(space-between);
-        }
-    }
-
-    .headerUtils
-    {
-        width: 100%;
-        @include flex-positionning(center, center, wrap, column);
-        @include border(2px, violet);
-
-        .headerNavbar
-        {    
-            width: 100%;
-            gap: 0;
-            padding: 0;
-            @include border(green);
-            @include flex-positionning(center, center, wrap, column);
-
-            a
-            {
-                width: 100%;
-                height: 56px;
-                display: block;
-                color: $text-color;
-                background-color: $background-gray;
-                @include flex-positionning();
-            }
-        }
-
-    }
-*/
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-header
-{
-    margin: 12px auto;
-    max-width: 1050px;
-    @include flex-positionning(space-between);
-    @include border;
-
-    .signUpButtons
-    {
-        gap: 24px;
-        @include flex-positionning(space-between);
-        // @include border(red);
     }
 }
-
-.headerUtils
-{
-    gap: 40px;
-    // @include border;
-    @include flex-positionning(space-between);
-
-    .headerNavbar
-    {
-        gap: 24px;
-        @include flex-positionning(space-between);
-        // @include border;
-    }
-}
-
-
-
-@media screen and (max-width: 600px) {*/
-
-    /*
-    // Reseting some styles
-    */
-/*
-    header
-    {
-
-    }
-
-    .headerUtils img
-    {
-        
-    }
-
-
-    .headerNavbar a, .signUpButtons button
-    {
-        // display: none;
-    }
-
-
-    header
-    {
-        margin: 12px auto;
-        max-width: 1050px;
-        @include flex-positionning(space-between);
-        @include border(red, 2px);
-
-        .headerUtils
-        {
-            gap: 8px;
-        }
-    
-
-        .signUpButtons
-        {
-            gap: 24px;
-            @include flex-positionning(space-between);
-        }
-    }
-
-    .headerUtils
-    {
-        width: 100%;
-        @include flex-positionning(center, center, wrap, column);
-        @include border(2px, violet);
-
-        .headerNavbar
-        {    
-            width: 100%;
-            gap: 0;
-            padding: 0;
-            @include border(green);
-            @include flex-positionning(center, center, wrap, column);
-
-            a
-            {
-                width: 100%;
-                height: 56px;
-                display: block;
-                color: $text-color;
-                background-color: $background-gray;
-                @include flex-positionning();
-            }
-        }
-
-    }
-
-
-}*/
