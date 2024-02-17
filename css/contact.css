@@ -111,6 +111,7 @@ img {
 /*-------------------------------Paragraph Styles-----------------------------*/
 .standard-paragraph {
   margin: 0;
+  max-width: 560px;
   color: #737373;
   font-size: 16px;
   font-weight: 600;
@@ -121,6 +122,7 @@ img {
 
 .paragraph-text-color {
   margin: 0;
+  max-width: 560px;
   color: #252B42;
   font-size: 16px;
   font-weight: 600;
@@ -131,6 +133,8 @@ img {
 
 .style-01-paragraph {
   margin: 0;
+  max-width: 560px;
+  border: 1px solid red;
   color: #737373;
   font-size: 20px;
   font-weight: 600;
@@ -157,6 +161,17 @@ img {
     line-height: 56px;
     letter-spacing: 0.2;
     word-wrap: break-word;
+  }
+  .standard-paragraph,
+  .style-01-paragraph {
+    max-width: 580px;
+  }
+  .standard-h1,
+  .standard-h1,
+  .standard-paragraph,
+  .style-01-paragraph {
+    padding: 0 24px;
+    text-align: center;
   }
 }
 /*################### -------------------COLORS--------------------####################*/
@@ -322,45 +337,89 @@ a:active {
 
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
+/*
+// General styles of the header
+*/
 header {
-  margin: 12px auto;
   max-width: 1050px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 1px solid transparent;
-}
-header .signUpButtons {
-  gap: 24px;
+  margin: 12px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.headerUtils {
-  gap: 40px;
+header .headerUtils {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.headerUtils .headerNavbar {
-  gap: 24px;
+header .headerNavbar {
+  gap: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.headerUtils .responsiveIcons {
+  gap: 32px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*
+// Media styles for responsive
+*/
 @media screen and (max-width: 600px) {
-  .headerNavbar, .signUpButtons {
+  /*
+  // Reseting some styles
+  */
+  .signUpButtons button {
     display: none;
+  }
+  header .headerNavbar {
+    display: none;
+  }
+  /*
+  // General styles for responsive
+  */
+  header .headerUtils {
+    width: 100%;
+    padding: 0 24px;
+  }
+  header .headerUtils .responsiveIcons {
+    opacity: 1;
+  }
+  header .headerNavbar {
+    gap: 0;
+    margin: 0;
+    width: 100%;
+  }
+  /*
+  // Utilities
+  */
+  .menu-appear {
+    display: block !important;
+  }
+  .headerNavbar a {
+    width: 100%;
+    height: 64px;
+    display: block;
+    color: #252B42;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 /*################### -------------------COLORS--------------------####################*/
@@ -596,6 +655,9 @@ footer .footerRights {
   padding: 16px;
   text-align: center;
 }
+.partnerSectionHeader .partnerSectionDescription {
+  max-width: 560px;
+}
 .partnerSectionHeader .partnersSectionTitle {
   /* text-align: center;
    @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
@@ -603,7 +665,6 @@ footer .footerRights {
 
 .companiesLogos {
   gap: 64px;
-  margin: 12px auto;
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
@@ -613,7 +674,7 @@ footer .footerRights {
 }
 
 .heroHeader {
-  margin: 12px auto;
+  margin: 64px auto;
   max-width: 1050px;
   border: 2px solid violet;
   display: flex;
@@ -657,7 +718,7 @@ footer .footerRights {
   border: 1px solid transparent;
 }
 .heroHeaderContent .heroHeaderDescription {
-  border: 1px solid transparent;
+  max-width: 24rem;
 }
 
 .heroHeaderContacts > * {
@@ -711,7 +772,7 @@ footer .footerRights {
 .companyTeamMembers {
   gap: 112px;
   padding: 112px 0;
-  margin: 12px auto;
+  margin: 0 auto;
   max-width: 1050px;
   display: flex;
   justify-content: space-between;

@@ -4,7 +4,7 @@
 {
     gap: 112px;
     padding: 112px 0;
-    margin: 12px auto;
+    margin: 0 auto;
     max-width: 1050px;
     @include flex-positionning(space-between, center, wrap, column);
     @include border;

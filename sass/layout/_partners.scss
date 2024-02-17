@@ -25,6 +25,11 @@
         text-align: center;
     }
 
+    .partnerSectionDescription
+    {
+        max-width: 560px;
+    }
+
     .partnersSectionTitle
     {
        /* text-align: center;
@@ -36,7 +41,7 @@
 .companiesLogos
 {
     gap: 64px;
-    margin: 12px auto;
+    // margin: 12px auto;
     @include border;
     @include flex-positionning();
 }

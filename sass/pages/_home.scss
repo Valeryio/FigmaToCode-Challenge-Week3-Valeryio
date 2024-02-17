@@ -3,77 +3,27 @@
 
 @import '../main.scss';
 
-/*
-.heroHeader
-{
-    margin: 12px auto;
-    max-width: 1050px;
-    @include flex-positionning(space-between);
-    // @include border;
-
-    img
-    {
-        max-width: 100%;
-        @include border;
-    }
-}
-
-.heroHeaderContent
-{
-    *
-    {  
-        word-wrap: break-word;
-    }
-
-    .outlineContent
-    {
-        /*
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 0.10px;*/
- /*   }
-
-    h1
-    {
-    /* font-size: 58px;
-        font-weight: 700;
-        line-height: 80px;
-        letter-spacing: 0.20px;*/
- /*   }
-
-    .heroHeaderDescription
-    {
-       /* font-size: 20px;
-        color: $Primary-gray;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0.20px;*/
- /*   }
-}*/
 
 .additionnalInfos
 {
-    gap: 60px;
-    // @include border;
+    gap: 64px;
+    @include border(red);
     margin: 12px auto;
     max-width: max-content;
     @include flex-positionning(space-between);
 
+    /// To prevent overflowing of the right part of the 
+    /// additionnal information section
+
     .rightSectionInformations
-    { 
-        // color: #737373;
-        // font-size: 14px;
-        // font-weight: 600;
-        // line-height: 20px;
-        // letter-spacing: 0.20px;
-        // word-wrap: break-word;
+    {
+        max-width: 560px;
     }
 
 }
 
 
-.rightSectionInformations
+.leftSectionInformations
 {
     *
     {
@@ -91,11 +41,11 @@
 
     .redDescriptiveInformations
     {
-        color: $text-color;
+        max-width: 400px;
+        
         font-size: 24px;
+        color: $text-color;
         font-weight: 700;
-        line-height: 32px;
-        letter-spacing: 0.10px;
     }
 
 }
@@ -107,20 +57,17 @@
     padding: 80px 0;
     margin: 12px auto;
     @include flex-positionning();
-    // @include border;
 }
 
 .recordContent
 {
     width: 192px;
-    // @include border;
 
     *
     {
         margin: 0;
         text-align: center;
         word-wrap: break-word;
-        // @include border;
     }
 
     .record
@@ -216,18 +163,27 @@
 
 .finalCallToAction
 {
+    @include flex-positionning(space-between);
+
+
     // max-width: max-content;
-    margin: 12px auto;
+    margin: 0 auto;
     color: white;
     padding: 0 0 0 256px;
     background-color: $Primary-blue;
-    @include flex-positionning(space-between);
     // @include border;
 
 }
 
 .callToActionContent
 {
+    --bottom-spacing: 24px;
+
+    > *
+    {
+        margin-bottom: var(--bottom-spacing);
+    }
+
     .outlineCTA
     {
         @include paragraphBaseProperties(white, 16px, 700, 50px, 0.20);
@@ -235,18 +191,18 @@
 
     .callToActionTitle
     {
-        @include paragraphBaseProperties(white, 40px, 700, 50px, 0.20);
+        @include paragraphBaseProperties(white, 40px, 700, 50px, 0.10);
     }
 
     .callToActionContent
     {
-        
         @include paragraphBaseProperties(white, 14px, 600, 20px, 0.20);
     }
 
     .ctaButton
     {
         @include mainButton(transparent, white);
+
         width: 136px;
         height: 48px;
         border-radius: 4px;
@@ -258,19 +214,23 @@
 
 @media screen and (max-width: 600px) 
 {
-/*
-    .heroHeaderContent
+
+    /// Modify the disposition for the additionnal informations
+    /// section
+    .additionnalInfos
     {
-        display: flex;
-        justify-content: center;
+        gap: 16px;
+        padding: 24px;
+        flex-direction: column;
     }
-*/
+
+    /// Set the min-width of the companies images to allow them
+    /// to grow and take one line by logo
     .companiesLogos
     {
-
         img
         {
-            min-height: 64px;
+            min-height: 80px;
         }
     }
 
@@ -279,10 +239,22 @@
     {
         padding: 12px;
 
+        .callToActionContent
+        {
+            @include flex-positionning();
+        }
+
         img
         {
             display: none;
         }
     }
+
+    /*
+    .redDescriptiveInformations, .redDescriptiveInformationsTitle
+    {
+        text-align: center;
+    }
+*/
     
 }

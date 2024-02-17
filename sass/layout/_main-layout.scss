@@ -2,7 +2,7 @@
 
 .heroHeader
 {
-    margin: 12px auto;
+    margin: 64px auto;
     max-width: 1050px;
     @include border(violet, 2px);
     @include flex-positionning(space-between, center);
@@ -50,7 +50,8 @@
 
     .heroHeaderDescription
     {
-        @include border;
+        // @include border;
+        max-width: 24rem;
     }
 }
 

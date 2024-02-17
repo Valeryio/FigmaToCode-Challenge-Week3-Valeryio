@@ -56,7 +56,6 @@ img
 .standard-h2
 {
     margin: 0;
-    // @include border;
     @include paragraphBaseProperties($text-color, 40px, 700, 64px, 0.20);
 }
 
@@ -66,18 +65,22 @@ img
 .standard-paragraph
 {
     margin: 0;
+    max-width: 560px;
     @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
 }
 
 .paragraph-text-color
 {
     margin: 0;
+    max-width: 560px;
     @include paragraphBaseProperties($text-color, 16px, 600, 24px, 0.10); 
 }
 
 .style-01-paragraph
 {
     margin: 0;
+    max-width: 560px;
+    @include border(red);
     @include paragraphBaseProperties($Primary-gray, 20px, 600, 30px, 0.20);    
 }
 
@@ -103,14 +106,27 @@ img
     {
         font-size: 40px;
         line-height: 64px;
-        // text-align: center
     }
 
     .standard-h2
     {
-        // text-align: center;
         @include paragraphBaseProperties($text-color, 32px, 700, 56px, 0.20);
     }
 
+    .standard-paragraph,
+    .style-01-paragraph
+    {
+        max-width: 580px;
+    }
+
+    .standard-h1,
+    .standard-h2,
+    .standard-paragraph,
+    .style-01-paragraph
+    {
+        padding: 0 24px;
+        text-align: center; 
+    }
+  
 
 }

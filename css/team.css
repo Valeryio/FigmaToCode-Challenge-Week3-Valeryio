@@ -111,6 +111,7 @@ img {
 /*-------------------------------Paragraph Styles-----------------------------*/
 .standard-paragraph {
   margin: 0;
+  max-width: 560px;
   color: #737373;
   font-size: 16px;
   font-weight: 600;
@@ -121,6 +122,7 @@ img {
 
 .paragraph-text-color {
   margin: 0;
+  max-width: 560px;
   color: #252B42;
   font-size: 16px;
   font-weight: 600;
@@ -131,6 +133,8 @@ img {
 
 .style-01-paragraph {
   margin: 0;
+  max-width: 560px;
+  border: 1px solid red;
   color: #737373;
   font-size: 20px;
   font-weight: 600;
@@ -157,6 +161,17 @@ img {
     line-height: 56px;
     letter-spacing: 0.2;
     word-wrap: break-word;
+  }
+  .standard-paragraph,
+  .style-01-paragraph {
+    max-width: 580px;
+  }
+  .standard-h1,
+  .standard-h1,
+  .standard-paragraph,
+  .style-01-paragraph {
+    padding: 0 24px;
+    text-align: center;
   }
 }
 /*################### -------------------COLORS--------------------####################*/
@@ -640,6 +655,9 @@ footer .footerRights {
   padding: 16px;
   text-align: center;
 }
+.partnerSectionHeader .partnerSectionDescription {
+  max-width: 560px;
+}
 .partnerSectionHeader .partnersSectionTitle {
   /* text-align: center;
    @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
@@ -647,7 +665,6 @@ footer .footerRights {
 
 .companiesLogos {
   gap: 64px;
-  margin: 12px auto;
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
@@ -657,7 +674,7 @@ footer .footerRights {
 }
 
 .heroHeader {
-  margin: 12px auto;
+  margin: 64px auto;
   max-width: 1050px;
   border: 2px solid violet;
   display: flex;
@@ -701,7 +718,7 @@ footer .footerRights {
   border: 1px solid transparent;
 }
 .heroHeaderContent .heroHeaderDescription {
-  border: 1px solid transparent;
+  max-width: 24rem;
 }
 
 .heroHeaderContacts > * {
@@ -755,7 +772,7 @@ footer .footerRights {
 .companyTeamMembers {
   gap: 112px;
   padding: 112px 0;
-  margin: 12px auto;
+  margin: 0 auto;
   max-width: 1050px;
   display: flex;
   justify-content: space-between;
