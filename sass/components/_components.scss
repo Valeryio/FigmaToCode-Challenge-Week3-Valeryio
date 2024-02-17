@@ -69,6 +69,13 @@ img
     @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
 }
 
+.standard-paragraph-exception
+{
+    margin: 0;
+    max-width: 560px;
+    @include paragraphBaseProperties($Primary-gray, 16px, 600, 24px, 0.10);
+}
+
 .paragraph-text-color
 {
     margin: 0;
@@ -80,7 +87,7 @@ img
 {
     margin: 0;
     max-width: 560px;
-    @include border(red);
+    // @include border(red);
     @include paragraphBaseProperties($Primary-gray, 20px, 600, 30px, 0.20);    
 }
 

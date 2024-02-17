@@ -167,7 +167,7 @@ img {
     max-width: 580px;
   }
   .standard-h1,
-  .standard-h1,
+  .standard-h2,
   .standard-paragraph,
   .style-01-paragraph {
     padding: 0 24px;
@@ -676,7 +676,6 @@ footer .footerRights {
 .heroHeader {
   margin: 64px auto;
   max-width: 1050px;
-  border: 2px solid violet;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -685,7 +684,6 @@ footer .footerRights {
 }
 .heroHeader .heroHeaderContent {
   gap: 32px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -695,11 +693,9 @@ footer .footerRights {
 .heroHeader picture {
   max-width: 616px;
   max-height: 646px;
-  border: 1px solid red;
 }
 .heroHeader .social-real-icons {
   gap: 24px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -711,19 +707,12 @@ footer .footerRights {
   margin: 0;
   word-wrap: break-word;
 }
-.heroHeaderContent .outlineContent {
-  border: 1px solid transparent;
-}
-.heroHeaderContent h1 {
-  border: 1px solid transparent;
-}
 .heroHeaderContent .heroHeaderDescription {
   max-width: 24rem;
 }
 
 .heroHeaderContacts > * {
   margin: 0;
-  border: 1px solid transparent;
   color: #252B42;
   font-size: 24px;
   font-weight: 700;
@@ -738,6 +727,8 @@ footer .footerRights {
 
 @media screen and (max-width: 600px) {
   .heroHeaderContent {
+    gap: 16px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -832,8 +823,7 @@ footer .footerRights {
 
 .trial-call-to-action {
   gap: 32px;
-  margin: 160px auto;
-  border: 1px solid transparent;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -845,7 +835,6 @@ footer .footerRights {
 }
 .trial-call-to-action .social-real-icons {
   gap: 32px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,6 +842,11 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  .trial-call-to-action {
+    gap: 32px;
+  }
+}
 .products-gallery {
   padding: 12px;
   border: 1px solid red;

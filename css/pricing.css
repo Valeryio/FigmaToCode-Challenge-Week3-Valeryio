@@ -836,38 +836,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
-/*
-.pricingPresentation
-{
-    gap: 8px;
-    padding: 0;
-    margin: 12px;
-    @include border;
-    @include flex-positionning(center, center, wrap, column);
-
-    > *
-    {
-        @include border;
-        text-align: center;
-    }
-
-    .pricingOutline
-    {*/
-/*
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-color: $Primary-gray;
-letter-spacing: 0.10px;*/
-/*   }
-
-    nav
-    {
-        gap: 12px;
-        @include flex-positionning();
-    }
-}
-*/
 .pricingOffer {
   padding: 112px 195px;
   background-color: #FAFAFA;
@@ -881,12 +849,46 @@ letter-spacing: 0.10px;*/
   text-align: center;
 }
 .pricingOffer .pricingOfferTopOptions {
-  gap: 20px;
+  gap: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.pricingOfferTopOptions {
+  border: 1px solid green;
+}
+.pricingOfferTopOptions button {
+  width: 5rem;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #23A6F0;
+}
+.pricingOfferTopOptions button::before {
+  top: 2px;
+  left: 4px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #e2e1e1;
+  border: 2px solid #D0D0D0;
+}
+.pricingOfferTopOptions span {
+  width: 6rem;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #B2E3FF;
 }
 
 .FAQ {
@@ -909,6 +911,9 @@ letter-spacing: 0.10px;*/
 }
 .faq-header > * {
   text-align: center;
+}
+.faq-header p {
+  text-align: left;
 }
 
 .questions-container {

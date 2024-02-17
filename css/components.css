@@ -75,6 +75,17 @@ img {
   word-wrap: break-word;
 }
 
+.standard-paragraph-exception {
+  margin: 0;
+  max-width: 560px;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
 .paragraph-text-color {
   margin: 0;
   max-width: 560px;
@@ -89,7 +100,6 @@ img {
 .style-01-paragraph {
   margin: 0;
   max-width: 560px;
-  border: 1px solid red;
   color: #737373;
   font-size: 20px;
   font-weight: 600;

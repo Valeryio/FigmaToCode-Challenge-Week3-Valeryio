@@ -738,6 +738,8 @@ footer .footerRights {
 
 @media screen and (max-width: 600px) {
   .heroHeaderContent {
+    gap: 16px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -855,7 +857,6 @@ footer .footerRights {
 
 .additionnalInfos {
   gap: 64px;
-  border: 1px solid red;
   margin: 12px auto;
   max-width: max-content;
   display: flex;
@@ -917,7 +918,6 @@ footer .footerRights {
 .presentationVideo {
   margin: 12px auto;
   max-width: 1050px;
-  border: 1px solid transparent;
 }
 .presentationVideo video {
   margin: auto;

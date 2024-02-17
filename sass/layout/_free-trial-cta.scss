@@ -2,8 +2,8 @@
 .trial-call-to-action
 {
     gap: 32px;
-    margin: 160px auto;
-    @include border;
+    margin: 80px auto;
+    // @include border(red);
     @include flex-positionning(center, center, wrap, column);
 
     > *
@@ -14,7 +14,14 @@
     .social-real-icons
     {
         gap: 32px;
-        @include border;
+        // @include border;
         @include flex-positionning();
+    }
+}
+
+@media screen and  (max-width: 600px){
+    .trial-call-to-action
+    {
+        gap: 32px;
     }
 }

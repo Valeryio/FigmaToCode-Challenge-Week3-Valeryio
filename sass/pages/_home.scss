@@ -7,7 +7,7 @@
 .additionnalInfos
 {
     gap: 64px;
-    @include border(red);
+    // @include border(red);
     margin: 12px auto;
     max-width: max-content;
     @include flex-positionning(space-between);
@@ -81,7 +81,7 @@
 {
     margin: 12px auto;
     max-width: 1050px;
-    @include border;
+    // @include border;
 
     video
     {
