@@ -4,31 +4,6 @@ img {
   max-width: 100%;
 }
 
-/*----------------------------------Button Styles------------------------------*/
-.primaryButton {
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 22px;
-  color: white;
-  background-color: #23A6F0;
-  width: 214px;
-  height: 52px;
-  border-radius: 4px;
-}
-
-.secondaryButton {
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 22px;
-  color: #252B42;
-  background-color: transparent;
-  color: #23A6F0;
-}
-
 /*-------------------------------Header Styles-----------------------------*/
 .outline-title {
   font-size: 16px;
@@ -51,6 +26,7 @@ img {
   font-weight: 700;
   line-height: 80px;
   letter-spacing: 0.2px;
+  max-width: 424px;
 }
 
 .standard-h2 {

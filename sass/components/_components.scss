@@ -7,24 +7,6 @@ img
     max-width: 100%;
 }
 
-
-/*----------------------------------Button Styles------------------------------*/
-
-.primaryButton
-{
-    @include mainButton($Primary-blue, white);
-    width: 214px;
-    height: 52px;
-    border-radius: 4px;
-}
-
-.secondaryButton
-{
-    @include mainButton;
-    color: $Primary-blue;
-}
-
-
 /*-------------------------------Header Styles-----------------------------*/
 
 .outline-title
@@ -51,6 +33,9 @@ img
     font-weight: 700;
     line-height: 80px;
     letter-spacing: 0.20px;
+
+    max-width: 424px;
+    // @include border(red);
 }
 
 .standard-h2

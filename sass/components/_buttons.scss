@@ -1,0 +1,17 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.primaryButton
+{
+    @include mainButton($Primary-blue, white);
+    width: 214px;
+    height: 52px;
+    border-radius: 4px;
+}
+
+.secondaryButton
+{
+    @include mainButton;
+    color: $Primary-blue;
+}

@@ -14,12 +14,12 @@
     gap: 8px;
     padding: 0;
     margin: 12px;
-    @include border;
+    // @include border;
     @include flex-positionning(center, center, wrap, column);
 
     > *
     {
-        @include border;
+        // @include border;
         text-align: center;
     }
 

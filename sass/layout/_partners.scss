@@ -42,6 +42,6 @@
 {
     gap: 64px;
     // margin: 12px auto;
-    @include border;
+    // @include border;
     @include flex-positionning();
 }

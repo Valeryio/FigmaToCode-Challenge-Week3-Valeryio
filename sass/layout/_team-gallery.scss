@@ -7,7 +7,7 @@
     margin: 0 auto;
     max-width: 1050px;
     @include flex-positionning(space-between, center, wrap, column);
-    @include border;
+    // @include border;
 
     .companyMembers
     {
@@ -19,7 +19,7 @@
 
 .companyTeamHeader
 {
-    @include border;
+    // @include border;
 
     *
     {
@@ -37,11 +37,11 @@
 .companyMembers
 {
     width: 100%;
-    @include border;
+    // @include border;
 
     .member
     {
-         @include border;
+        //  @include border;
         @include flex-positionning(space-between, center, wrap, column);
     }
 

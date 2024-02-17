@@ -5,12 +5,12 @@
 .products-gallery
 {
     padding: 12px;
-    @include border(red);
+    // @include border(red);
     @include flex-positionning();
 
     > *
     {
-        @include border;
+        // @include border;
     }
 
     .small-img

@@ -49,31 +49,6 @@ img {
   max-width: 100%;
 }
 
-/*----------------------------------Button Styles------------------------------*/
-.primaryButton {
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 22px;
-  color: white;
-  background-color: #23A6F0;
-  width: 214px;
-  height: 52px;
-  border-radius: 4px;
-}
-
-.secondaryButton {
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 22px;
-  color: #252B42;
-  background-color: transparent;
-  color: #23A6F0;
-}
-
 /*-------------------------------Header Styles-----------------------------*/
 .outline-title {
   font-size: 16px;
@@ -96,6 +71,7 @@ img {
   font-weight: 700;
   line-height: 80px;
   letter-spacing: 0.2px;
+  max-width: 424px;
 }
 
 .standard-h2 {
@@ -111,6 +87,18 @@ img {
 /*-------------------------------Paragraph Styles-----------------------------*/
 .standard-paragraph {
   margin: 0;
+  max-width: 560px;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  word-wrap: break-word;
+}
+
+.standard-paragraph-exception {
+  margin: 0;
+  max-width: 560px;
   color: #737373;
   font-size: 16px;
   font-weight: 600;
@@ -121,6 +109,7 @@ img {
 
 .paragraph-text-color {
   margin: 0;
+  max-width: 560px;
   color: #252B42;
   font-size: 16px;
   font-weight: 600;
@@ -131,6 +120,7 @@ img {
 
 .style-01-paragraph {
   margin: 0;
+  max-width: 560px;
   color: #737373;
   font-size: 20px;
   font-weight: 600;
@@ -158,12 +148,22 @@ img {
     letter-spacing: 0.2;
     word-wrap: break-word;
   }
+  .standard-paragraph,
+  .style-01-paragraph {
+    max-width: 580px;
+  }
+  .standard-h1,
+  .standard-h2,
+  .standard-paragraph,
+  .style-01-paragraph {
+    padding: 0 24px;
+    text-align: center;
+  }
 }
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -184,7 +184,6 @@ img {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +192,6 @@ img {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -204,7 +202,6 @@ img {
 
 .price {
   margin: 0;
-  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -214,7 +211,6 @@ img {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -224,7 +220,6 @@ img {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -282,6 +277,32 @@ img {
     gap: 24px;
   }
 }
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+.primaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+  background-color: #23A6F0;
+  width: 214px;
+  height: 52px;
+  border-radius: 4px;
+}
+
+.secondaryButton {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: #252B42;
+  background-color: transparent;
+  color: #23A6F0;
+}
+
 /*################### -------------------COLORS--------------------####################*/
 * {
   box-sizing: border-box;
@@ -411,7 +432,6 @@ header .headerNavbar {
 /*################### -------------------COLORS--------------------####################*/
 footer {
   padding: 28px;
-  border: 1px solid transparent;
 }
 footer .socialMediaBrand {
   max-width: 1120px;
@@ -437,7 +457,6 @@ footer .footerInformations {
 footer .footerRights {
   width: 100%;
   height: 56px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: start;
@@ -445,9 +464,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
-.footerInformations {
-  border: 1px solid transparent;
-}
 .footerInformations nav {
   gap: 16px;
   display: flex;
@@ -461,7 +477,6 @@ footer .footerRights {
   width: 100%;
   gap: 8px;
   height: max-content;
-  border: 1px solid violet;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,7 +505,6 @@ footer .footerRights {
   margin: auto;
   min-width: 76%;
   font-weight: 600;
-  border: 1px solid transparent;
 }
 
 @media screen and (max-width: 600px) {
@@ -504,7 +518,6 @@ footer .footerRights {
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -525,7 +538,6 @@ footer .footerRights {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,7 +546,6 @@ footer .footerRights {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -545,7 +556,6 @@ footer .footerRights {
 
 .price {
   margin: 0;
-  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -555,7 +565,6 @@ footer .footerRights {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -565,7 +574,6 @@ footer .footerRights {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -640,6 +648,9 @@ footer .footerRights {
   padding: 16px;
   text-align: center;
 }
+.partnerSectionHeader .partnerSectionDescription {
+  max-width: 560px;
+}
 .partnerSectionHeader .partnersSectionTitle {
   /* text-align: center;
    @include paragraphBaseProperties($text-color, 40px, 700, 80px, 0.20);*/
@@ -647,8 +658,6 @@ footer .footerRights {
 
 .companiesLogos {
   gap: 64px;
-  margin: 12px auto;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -657,9 +666,8 @@ footer .footerRights {
 }
 
 .heroHeader {
-  margin: 12px auto;
+  margin: 64px auto;
   max-width: 1050px;
-  border: 2px solid violet;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -668,7 +676,6 @@ footer .footerRights {
 }
 .heroHeader .heroHeaderContent {
   gap: 32px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -678,11 +685,9 @@ footer .footerRights {
 .heroHeader picture {
   max-width: 616px;
   max-height: 646px;
-  border: 1px solid red;
 }
 .heroHeader .social-real-icons {
   gap: 24px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -694,19 +699,12 @@ footer .footerRights {
   margin: 0;
   word-wrap: break-word;
 }
-.heroHeaderContent .outlineContent {
-  border: 1px solid transparent;
-}
-.heroHeaderContent h1 {
-  border: 1px solid transparent;
-}
 .heroHeaderContent .heroHeaderDescription {
-  border: 1px solid transparent;
+  max-width: 24rem;
 }
 
 .heroHeaderContacts > * {
   margin: 0;
-  border: 1px solid transparent;
   color: #252B42;
   font-size: 24px;
   font-weight: 700;
@@ -721,6 +719,8 @@ footer .footerRights {
 
 @media screen and (max-width: 600px) {
   .heroHeaderContent {
+    gap: 16px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -732,7 +732,6 @@ footer .footerRights {
   gap: 8px;
   padding: 0;
   margin: 12px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -740,7 +739,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 .first-section > * {
-  border: 1px solid transparent;
   text-align: center;
 }
 .first-section nav {
@@ -755,14 +753,13 @@ footer .footerRights {
 .companyTeamMembers {
   gap: 112px;
   padding: 112px 0;
-  margin: 12px auto;
+  margin: 0 auto;
   max-width: 1050px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid transparent;
 }
 .companyTeamMembers .companyMembers {
   gap: 30px;
@@ -773,9 +770,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
-.companyTeamHeader {
-  border: 1px solid transparent;
-}
 .companyTeamHeader * {
   margin: 0;
   padding: 0;
@@ -783,10 +777,8 @@ footer .footerRights {
 }
 .companyMembers {
   width: 100%;
-  border: 1px solid transparent;
 }
 .companyMembers .member {
-  border: 1px solid transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -815,8 +807,7 @@ footer .footerRights {
 
 .trial-call-to-action {
   gap: 32px;
-  margin: 160px auto;
-  border: 1px solid transparent;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -828,7 +819,6 @@ footer .footerRights {
 }
 .trial-call-to-action .social-real-icons {
   gap: 32px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -836,6 +826,11 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  .trial-call-to-action {
+    gap: 32px;
+  }
+}
 .pricingOffer {
   padding: 112px 195px;
   background-color: #FAFAFA;
@@ -857,9 +852,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
-.pricingOfferTopOptions {
-  border: 1px solid green;
-}
 .pricingOfferTopOptions button {
   width: 5rem;
   height: 40px;
@@ -895,19 +887,11 @@ footer .footerRights {
   gap: 32px;
   margin: 80px auto;
   max-width: max-content;
-  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-}
-.FAQ a {
-  border: 2px solid red;
-}
-
-.faq-header {
-  border: 2px solid red;
 }
 .faq-header > * {
   text-align: center;
@@ -919,7 +903,6 @@ footer .footerRights {
 .questions-container {
   gap: 30px;
   margin: auto;
-  border: 2px solid red;
   max-width: max-content;
   display: flex;
   justify-content: center;
@@ -931,15 +914,11 @@ footer .footerRights {
 .q-and-answer-container {
   gap: 16px;
   padding: 25px;
-  border: 1px solid transparent;
   display: flex;
   justify-content: top;
   align-items: top;
   flex-direction: row;
   flex-wrap: wrap;
-}
-.q-and-answer-container > * {
-  border: 1px solid transparent;
 }
 .q-and-answer-container picture {
   padding-top: 24px;

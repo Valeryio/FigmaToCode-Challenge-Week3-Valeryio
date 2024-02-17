@@ -2,7 +2,6 @@
 /*################### -------------------COLORS--------------------####################*/
 footer {
   padding: 28px;
-  border: 1px solid black;
 }
 footer .socialMediaBrand {
   max-width: 1120px;
@@ -28,7 +27,6 @@ footer .footerInformations {
 footer .footerRights {
   width: 100%;
   height: 56px;
-  border: 1px solid black;
   display: flex;
   justify-content: left;
   align-items: start;
@@ -36,9 +34,6 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
-.footerInformations {
-  border: 1px solid black;
-}
 .footerInformations nav {
   gap: 16px;
   display: flex;
@@ -52,7 +47,6 @@ footer .footerRights {
   width: 100%;
   gap: 8px;
   height: max-content;
-  border: 1px solid violet;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +75,6 @@ footer .footerRights {
   margin: auto;
   min-width: 76%;
   font-weight: 600;
-  border: 1px solid black;
 }
 
 @media screen and (max-width: 600px) {
