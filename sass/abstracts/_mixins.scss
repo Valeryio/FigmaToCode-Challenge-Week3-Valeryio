@@ -1,7 +1,7 @@
 @import "variables";
 
 
-@mixin border($color: black, $width: 1px)
+@mixin border($color: transparent, $width: 1px)
 {
     border: $width solid $color;
 }

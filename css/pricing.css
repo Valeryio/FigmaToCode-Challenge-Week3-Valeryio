@@ -103,7 +103,7 @@ img {
   color: #252B42;
   font-size: 40px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 64px;
   letter-spacing: 0.2;
   word-wrap: break-word;
 }
@@ -144,11 +144,26 @@ img {
   color: #252B42;
 }
 
+/*---------------------------------Responsive Styles-------------------------------*/
+@media screen and (max-width: 600px) {
+  .standard-h1 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .standard-h2 {
+    color: #252B42;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.2;
+    word-wrap: break-word;
+  }
+}
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -169,7 +184,7 @@ img {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +193,7 @@ img {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -189,7 +204,7 @@ img {
 
 .price {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -199,7 +214,7 @@ img {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -209,7 +224,7 @@ img {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -226,6 +241,7 @@ img {
 }
 
 .sideContainer {
+  background-color: white;
   padding: 20px 24px;
 }
 .sideContainer .siteContainerTitle {
@@ -258,6 +274,9 @@ img {
   word-wrap: break-word;
 }
 
+/*
+// Responsive rules
+*/
 @media screen and (max-width: 600px) {
   .pricingOfferContainer {
     gap: 24px;
@@ -311,7 +330,7 @@ header {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 header .signUpButtons {
   gap: 24px;
@@ -339,10 +358,16 @@ header .signUpButtons {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  .headerNavbar, .signUpButtons {
+    display: none;
+  }
+}
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 footer {
-  border: 1px solid black;
+  padding: 28px;
+  border: 1px solid transparent;
 }
 footer .socialMediaBrand {
   max-width: 1120px;
@@ -368,7 +393,7 @@ footer .footerInformations {
 footer .footerRights {
   width: 100%;
   height: 56px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: start;
@@ -377,7 +402,7 @@ footer .footerRights {
 }
 
 .footerInformations {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .footerInformations nav {
   gap: 16px;
@@ -389,18 +414,24 @@ footer .footerRights {
 }
 
 .formContent {
-  width: max-content;
-  height: 56px;
-  border: 1px solid black;
+  width: 100%;
+  gap: 8px;
+  height: max-content;
+  border: 1px solid violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .formContent * {
   margin: 0;
 }
 .formContent input, .formContent button {
-  height: 100%;
+  height: 3rem;
 }
 .formContent input {
-  width: 204px;
+  width: 216px;
   outline: none;
   padding: 4px;
   border: 2px solid #737373;
@@ -415,16 +446,21 @@ footer .footerRights {
   margin: auto;
   min-width: 76%;
   font-weight: 600;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
+@media screen and (max-width: 600px) {
+  .formContent button {
+    min-width: 112px;
+  }
+}
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -445,7 +481,7 @@ footer .footerRights {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +490,7 @@ footer .footerRights {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -465,7 +501,7 @@ footer .footerRights {
 
 .price {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -475,7 +511,7 @@ footer .footerRights {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -485,7 +521,7 @@ footer .footerRights {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -502,6 +538,7 @@ footer .footerRights {
 }
 
 .sideContainer {
+  background-color: white;
   padding: 20px 24px;
 }
 .sideContainer .siteContainerTitle {
@@ -534,6 +571,9 @@ footer .footerRights {
   word-wrap: break-word;
 }
 
+/*
+// Responsive rules
+*/
 @media screen and (max-width: 600px) {
   .pricingOfferContainer {
     gap: 24px;
@@ -564,7 +604,7 @@ footer .footerRights {
 .companiesLogos {
   gap: 64px;
   margin: 12px auto;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -572,11 +612,83 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
+.heroHeader {
+  margin: 12px auto;
+  max-width: 1050px;
+  border: 2px solid violet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heroHeader .heroHeaderContent {
+  gap: 32px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.heroHeader picture {
+  max-width: 616px;
+  max-height: 646px;
+  border: 1px solid red;
+}
+.heroHeader .social-real-icons {
+  gap: 24px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.heroHeaderContent > * {
+  margin: 0;
+  word-wrap: break-word;
+}
+.heroHeaderContent .outlineContent {
+  border: 1px solid transparent;
+}
+.heroHeaderContent h1 {
+  border: 1px solid transparent;
+}
+.heroHeaderContent .heroHeaderDescription {
+  border: 1px solid transparent;
+}
+
+.heroHeaderContacts > * {
+  margin: 0;
+  border: 1px solid transparent;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.2;
+  word-wrap: break-word;
+}
+
+.heroHeader picture img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .heroHeaderContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .first-section {
   gap: 8px;
   padding: 0;
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -584,7 +696,7 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 .first-section > * {
-  border: 1px solid black;
+  border: 1px solid transparent;
   text-align: center;
 }
 .first-section nav {
@@ -596,10 +708,71 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 
+.companyTeamMembers {
+  gap: 112px;
+  padding: 112px 0;
+  margin: 12px auto;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid transparent;
+}
+.companyTeamMembers .companyMembers {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.companyTeamHeader {
+  border: 1px solid transparent;
+}
+.companyTeamHeader * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.companyMembers {
+  width: 100%;
+  border: 1px solid transparent;
+}
+.companyMembers .member {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.companyMembers .socialIcons {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.memberInformations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.memberInformations .memberUsername {
+  font-weight: 700;
+}
+
 .trial-call-to-action {
   gap: 32px;
   margin: 160px auto;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,7 +784,7 @@ footer .footerRights {
 }
 .trial-call-to-action .social-real-icons {
   gap: 32px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -652,9 +825,8 @@ letter-spacing: 0.10px;*/
 }
 */
 .pricingOffer {
-  margin: 12px;
   padding: 112px 195px;
-  border: 1px solid red;
+  background-color: #FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -710,7 +882,7 @@ letter-spacing: 0.10px;*/
 .q-and-answer-container {
   gap: 16px;
   padding: 25px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: top;
   align-items: top;
@@ -718,15 +890,21 @@ letter-spacing: 0.10px;*/
   flex-wrap: wrap;
 }
 .q-and-answer-container > * {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .q-and-answer-container picture {
   padding-top: 24px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .pricingOffer {
     padding: 12px;
+  }
+  .pricingOfferContainer {
+    gap: 12px;
+  }
+  .q-and-answer-container picture {
+    display: none;
   }
 }
 

@@ -1,0 +1,93 @@
+/*################### -------------------COLORS--------------------####################*/
+/*################### -------------------COLORS--------------------####################*/
+footer {
+  padding: 28px;
+  border: 1px solid black;
+}
+footer .socialMediaBrand {
+  max-width: 1120px;
+  padding: 0 0 12px 0;
+  margin: 24px auto;
+  border-bottom: 1px solid #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footerInformations {
+  gap: 64px;
+  margin: 12px auto;
+  max-width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footerRights {
+  width: 100%;
+  height: 56px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footerInformations {
+  border: 1px solid black;
+}
+.footerInformations nav {
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.formContent {
+  width: 100%;
+  gap: 8px;
+  height: max-content;
+  border: 1px solid violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.formContent * {
+  margin: 0;
+}
+.formContent input, .formContent button {
+  height: 3rem;
+}
+.formContent input {
+  width: 216px;
+  outline: none;
+  padding: 4px;
+  border: 2px solid #737373;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+}
+.formContent button {
+  width: 112px;
+}
+
+.footerRights p {
+  margin: auto;
+  min-width: 76%;
+  font-weight: 600;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .formContent button {
+    min-width: 112px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -256,9 +256,15 @@
 
 
 
-@media screen and (max-width: 700px) 
+@media screen and (max-width: 600px) 
 {
-
+/*
+    .heroHeaderContent
+    {
+        display: flex;
+        justify-content: center;
+    }
+*/
     .companiesLogos
     {
 
@@ -267,14 +273,16 @@
             min-height: 64px;
         }
     }
-    
-}
 
 
-@media screen and (max-width: 600px) {
-
-    .headerNavbar, .signUpButtons
+    .finalCallToAction
     {
-        display: none;
+        padding: 12px;
+
+        img
+        {
+            display: none;
+        }
     }
+    
 }

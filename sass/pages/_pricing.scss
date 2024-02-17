@@ -38,9 +38,10 @@
 
 .pricingOffer
 {
-    margin: 12px;
+    // margin: 12px;
     padding: 112px 195px;
-    @include border(red);
+    // @include border(red);
+    background-color: $background-gray;
     @include flex-positionning(center, center, wrap, column);
 
     > *
@@ -112,12 +113,27 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     
     .pricingOffer
     {
         padding: 12px;
+    }
+
+    .pricingOfferContainer
+    {
+        gap: 12px;
+    }
+
+    
+    .q-and-answer-container
+    {
+        picture
+        {
+            display: none;
+        }
+
     }
 
 }

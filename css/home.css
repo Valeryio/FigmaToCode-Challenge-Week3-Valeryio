@@ -144,11 +144,26 @@ img {
   color: #252B42;
 }
 
+/*---------------------------------Responsive Styles-------------------------------*/
+@media screen and (max-width: 600px) {
+  .standard-h1 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .standard-h2 {
+    color: #252B42;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.2;
+    word-wrap: break-word;
+  }
+}
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -169,7 +184,7 @@ img {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +193,7 @@ img {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -189,7 +204,7 @@ img {
 
 .price {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -199,7 +214,7 @@ img {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -209,7 +224,7 @@ img {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -226,6 +241,7 @@ img {
 }
 
 .sideContainer {
+  background-color: white;
   padding: 20px 24px;
 }
 .sideContainer .siteContainerTitle {
@@ -258,6 +274,9 @@ img {
   word-wrap: break-word;
 }
 
+/*
+// Responsive rules
+*/
 @media screen and (max-width: 600px) {
   .pricingOfferContainer {
     gap: 24px;
@@ -303,46 +322,114 @@ a:active {
 
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
-header {
-  margin: 12px auto;
-  max-width: 1050px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 1px solid black;
-}
-header .signUpButtons {
-  gap: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+/*
+header
+{
+    margin: 12px auto;
+    max-width: 1050px;
+    @include flex-positionning(space-between);
+    @include border;
+
+    .signUpButtons
+    {
+        gap: 24px;
+        @include flex-positionning(space-between);
+        // @include border(red);
+    }
 }
 
-.headerUtils {
-  gap: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.headerUtils .headerNavbar {
-  gap: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+.headerUtils
+{
+    gap: 40px;
+    // @include border;
+    @include flex-positionning(space-between);
+
+    .headerNavbar
+    {
+        gap: 24px;
+        @include flex-positionning(space-between);
+        // @include border;
+    }
 }
 
+
+
+@media screen and (max-width: 600px) {*/
+/*
+// Reseting some styles
+*/
+/*
+    header
+    {
+
+    }
+
+    .headerUtils img
+    {
+
+    }
+
+
+    .headerNavbar a, .signUpButtons button
+    {
+        // display: none;
+    }
+
+
+    header
+    {
+        margin: 12px auto;
+        max-width: 1050px;
+        @include flex-positionning(space-between);
+        @include border(red, 2px);
+
+        .headerUtils
+        {
+            gap: 8px;
+        }
+
+
+        .signUpButtons
+        {
+            gap: 24px;
+            @include flex-positionning(space-between);
+        }
+    }
+
+    .headerUtils
+    {
+        width: 100%;
+        @include flex-positionning(center, center, wrap, column);
+        @include border(2px, violet);
+
+        .headerNavbar
+        {    
+            width: 100%;
+            gap: 0;
+            padding: 0;
+            @include border(green);
+            @include flex-positionning(center, center, wrap, column);
+
+            a
+            {
+                width: 100%;
+                height: 56px;
+                display: block;
+                color: $text-color;
+                background-color: $background-gray;
+                @include flex-positionning();
+            }
+        }
+
+    }
+
+
+}*/
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 footer {
-  border: 1px solid black;
+  padding: 28px;
+  border: 1px solid transparent;
 }
 footer .socialMediaBrand {
   max-width: 1120px;
@@ -368,7 +455,7 @@ footer .footerInformations {
 footer .footerRights {
   width: 100%;
   height: 56px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: start;
@@ -377,7 +464,7 @@ footer .footerRights {
 }
 
 .footerInformations {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .footerInformations nav {
   gap: 16px;
@@ -389,18 +476,24 @@ footer .footerRights {
 }
 
 .formContent {
-  width: max-content;
-  height: 56px;
-  border: 1px solid black;
+  width: 100%;
+  gap: 8px;
+  height: max-content;
+  border: 1px solid violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .formContent * {
   margin: 0;
 }
 .formContent input, .formContent button {
-  height: 100%;
+  height: 3rem;
 }
 .formContent input {
-  width: 204px;
+  width: 216px;
   outline: none;
   padding: 4px;
   border: 2px solid #737373;
@@ -415,16 +508,21 @@ footer .footerRights {
   margin: auto;
   min-width: 76%;
   font-weight: 600;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
+@media screen and (max-width: 600px) {
+  .formContent button {
+    min-width: 112px;
+  }
+}
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 /*################### -------------------COLORS--------------------####################*/
 .pricingOfferContainer {
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -445,7 +543,7 @@ footer .footerRights {
 }
 .pricingCard .price {
   gap: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +552,7 @@ footer .footerRights {
 }
 .pricingCard .pricingOfferOptions {
   gap: 8px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -465,7 +563,7 @@ footer .footerRights {
 
 .price {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
   color: #23A6F0;
   font-size: 40px;
   font-weight: 700;
@@ -475,7 +573,7 @@ footer .footerRights {
 }
 .price .priceOptions {
   height: max-content;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -485,7 +583,7 @@ footer .footerRights {
 
 .price .priceOptions > * {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .price .priceOptions p {
   color: #23A6F0;
@@ -502,6 +600,7 @@ footer .footerRights {
 }
 
 .sideContainer {
+  background-color: white;
   padding: 20px 24px;
 }
 .sideContainer .siteContainerTitle {
@@ -534,6 +633,9 @@ footer .footerRights {
   word-wrap: break-word;
 }
 
+/*
+// Responsive rules
+*/
 @media screen and (max-width: 600px) {
   .pricingOfferContainer {
     gap: 24px;
@@ -564,7 +666,7 @@ footer .footerRights {
 .companiesLogos {
   gap: 64px;
   margin: 12px auto;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -584,7 +686,7 @@ footer .footerRights {
 }
 .heroHeader .heroHeaderContent {
   gap: 32px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -598,7 +700,7 @@ footer .footerRights {
 }
 .heroHeader .social-real-icons {
   gap: 24px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -611,18 +713,18 @@ footer .footerRights {
   word-wrap: break-word;
 }
 .heroHeaderContent .outlineContent {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .heroHeaderContent h1 {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .heroHeaderContent .heroHeaderDescription {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 .heroHeaderContacts > * {
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid transparent;
   color: #252B42;
   font-size: 24px;
   font-weight: 700;
@@ -635,11 +737,20 @@ footer .footerRights {
   max-width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .heroHeaderContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .first-section {
   gap: 8px;
   padding: 0;
   margin: 12px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,7 +758,7 @@ footer .footerRights {
   flex-wrap: wrap;
 }
 .first-section > * {
-  border: 1px solid black;
+  border: 1px solid transparent;
   text-align: center;
 }
 .first-section nav {
@@ -669,7 +780,7 @@ footer .footerRights {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .companyTeamMembers .companyMembers {
   gap: 30px;
@@ -681,7 +792,7 @@ footer .footerRights {
 }
 
 .companyTeamHeader {
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .companyTeamHeader * {
   margin: 0;
@@ -690,10 +801,10 @@ footer .footerRights {
 }
 .companyMembers {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .companyMembers .member {
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -723,7 +834,7 @@ footer .footerRights {
 .trial-call-to-action {
   gap: 32px;
   margin: 160px auto;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -735,7 +846,7 @@ footer .footerRights {
 }
 .trial-call-to-action .social-real-icons {
   gap: 32px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -851,7 +962,7 @@ footer .footerRights {
 .presentationVideo {
   margin: 12px auto;
   max-width: 1050px;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .presentationVideo video {
   margin: auto;
@@ -976,13 +1087,21 @@ footer .footerRights {
   border: 2px solid white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  /*
+      .heroHeaderContent
+      {
+          display: flex;
+          justify-content: center;
+      }
+  */
   .companiesLogos img {
     min-height: 64px;
   }
-}
-@media screen and (max-width: 600px) {
-  .headerNavbar, .signUpButtons {
+  .finalCallToAction {
+    padding: 12px;
+  }
+  .finalCallToAction img {
     display: none;
   }
 }

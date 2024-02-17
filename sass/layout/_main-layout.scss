@@ -74,3 +74,13 @@
         // max-height: 10px;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .heroHeaderContent
+    {    
+        @include flex-positionning(center, center, wrap, column);
+    }
+    
+}

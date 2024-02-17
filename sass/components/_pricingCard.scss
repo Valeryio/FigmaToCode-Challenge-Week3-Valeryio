@@ -80,6 +80,7 @@
 
 .sideContainer
 {
+    background-color: white;
     padding: 20px 24px;
 
     .siteContainerTitle
@@ -113,6 +114,11 @@
     }
 }
 
+
+
+/*
+// Responsive rules
+*/
 
 
 @media screen and (max-width: 600px) {

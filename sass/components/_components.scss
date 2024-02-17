@@ -88,3 +88,29 @@ img
 {
     color: $text-color;
 }
+
+
+
+/*---------------------------------Responsive Styles-------------------------------*/
+
+
+
+@media screen and (max-width: 600px) 
+{
+
+        
+    .standard-h1
+    {
+        font-size: 40px;
+        line-height: 64px;
+        // text-align: center
+    }
+
+    .standard-h2
+    {
+        // text-align: center;
+        @include paragraphBaseProperties($text-color, 32px, 700, 56px, 0.20);
+    }
+
+
+}

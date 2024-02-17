@@ -99,4 +99,20 @@ img {
   color: #252B42;
 }
 
+/*---------------------------------Responsive Styles-------------------------------*/
+@media screen and (max-width: 600px) {
+  .standard-h1 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .standard-h2 {
+    color: #252B42;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.2;
+    word-wrap: break-word;
+  }
+}
+
 /*# sourceMappingURL=components.css.map */
