@@ -6,13 +6,11 @@
 .supportOptionSection
 {
     margin: 164px auto 64px auto;
-    // @include border;
     @include flex-positionning(center, center, wrap, column);
 
     .supportOptionSectionHeader
     {
         margin: 32px auto;
-        // @include border;
     }
 
     .supportOptionsCardContainer
@@ -38,14 +36,12 @@
     width: 328px;
     padding: 24px 40px;
     box-sizing: border-box;
-    // @include border;
     @include flex-positionning(center, center, wrap, column);
 
     > *
     {
         margin: 0;
         font-weight: 700;
-        // @include border;
     }
 
     button
@@ -74,6 +70,5 @@
 {
     gap: 24px;
     margin: 24px auto;
-    // @include border;
     @include flex-positionning(center, center, wrap, column);
 }

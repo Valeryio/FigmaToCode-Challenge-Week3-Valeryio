@@ -35,7 +35,6 @@ img
     letter-spacing: 0.20px;
 
     max-width: 424px;
-    // @include border(red);
 }
 
 .standard-h2
@@ -72,7 +71,6 @@ img
 {
     margin: 0;
     max-width: 560px;
-    // @include border(red);
     @include paragraphBaseProperties($Primary-gray, 20px, 600, 30px, 0.20);    
 }
 

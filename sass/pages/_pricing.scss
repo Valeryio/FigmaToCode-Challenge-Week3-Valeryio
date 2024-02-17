@@ -7,9 +7,7 @@
 
 .pricingOffer
 {
-    // margin: 12px;
     padding: 112px 195px;
-    // @include border(red);
     background-color: $background-gray;
     @include flex-positionning(center, center, wrap, column);
 
@@ -49,7 +47,6 @@
         border-radius: 50%;
         background-color: #e2e1e1;
         border: 2px solid #D0D0D0;
-        // background-color: $background-gray;
     }
 
     span
@@ -60,8 +57,6 @@
         @include flex-positionning();
         background-color: #B2E3FF;
     }
-
-    // @include border(green);
 }
 
 
@@ -72,20 +67,11 @@
     gap: 32px;
     margin: 80px auto;
     max-width: max-content;
-    // @include border(green, 2px);
     @include flex-positionning(center, center, wrap, column);
-
-    a
-    {
-        // text-align: center;
-        // @include border(red, 2px);
-        // display: block;
-    }
 }
 
 .faq-header
 {
-    // @include border(red, 2px);
 
     > *
     {
@@ -102,7 +88,6 @@
 {
     gap: 30px;
     margin: auto;
-    // @include border(red, 2px);
     max-width: max-content;
     @include flex-positionning();
 }
@@ -112,13 +97,7 @@
 {
     gap: 16px;
     padding: 25px;
-    // @include border;
     @include flex-positionning(top, top);
-
-    > *
-    {
-        // @include border;
-    }
 
     picture
     {

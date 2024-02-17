@@ -7,7 +7,6 @@
 .pricingOfferContainer
 {
     margin: 12px;
-    // @include border;
     @include flex-positionning(center, end);
 }
 
@@ -23,14 +22,12 @@
     .price
     {
         gap: 12px;
-        // @include border;
         @include flex-positionning();
     }
 
     .pricingOfferOptions
     {
         gap: 8px;
-        // @include border;
         @include flex-positionning(start, center, no-wrap);
         min-width: 100%;
     }
@@ -41,13 +38,11 @@
 {
     
     margin: 0;
-    // @include border;
     @include paragraphBaseProperties($Primary-blue, 40px, 700, 80px, 0.20);
 
     .priceOptions
     {
         height: max-content;
-        // @include border;
         @include flex-positionning(center, start, wrap, column);
         
         
@@ -61,7 +56,6 @@
     > *
     {
         margin: 0;
-        // @include border;
     }
     
     p
@@ -103,7 +97,6 @@
 {
     min-height: 800px;
     color: white;
-    // padding: 70px 40px;
     padding: 20px 24px;
     background-color: $text-color;
 

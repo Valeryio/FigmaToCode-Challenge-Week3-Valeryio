@@ -893,6 +893,7 @@ footer .footerRights {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .faq-header > * {
   text-align: center;
 }
